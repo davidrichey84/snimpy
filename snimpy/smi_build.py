@@ -50,6 +50,7 @@ typedef struct SmiType {
     SmiIdentifier       name;
     SmiBasetype         basetype;
     char                *format;
+    char                *description;
     ...;
 } SmiType;
 
@@ -80,6 +81,7 @@ typedef struct SmiNode {
     unsigned int        oidlen;
     SmiSubid            *oid;
     char                *format;
+    char                *description;
     SmiIndexkind        indexkind;
     int                 implied;
     SmiNodekind         nodekind;
@@ -111,6 +113,7 @@ typedef struct SmiRange {
 typedef struct SmiModule {
     SmiIdentifier       name;
     int                 conformance;
+    char                *description;
     ...;
 } SmiModule;
 
